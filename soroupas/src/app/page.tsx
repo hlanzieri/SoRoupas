@@ -2,8 +2,9 @@ import Header from '@/components/Header';
 import Brands from '@/components/Brands';
 import Locations from '@/components/Location';
 import Footer from '@/components/Footer';
-import { ShoppingBag, Star, CheckCircle, ArrowRight } from 'lucide-react';
+import { Star, Shirt, Sparkles, ShoppingBag, ArrowRight } from 'lucide-react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Home() {
   return (
@@ -43,7 +44,7 @@ export default function Home() {
       {/* --- SECTION: MARCAS (MARQUEE) --- */}
       <section id="marcas">
         <div className="py-6 bg-gray-50 text-center">
-          <p className="text-sm font-bold text-gray-400 uppercase tracking-widest mb-4">Principais Marcas que Trabalhamos</p>
+          <p className="text-sm font-bold text-gray-600 uppercase tracking-widest mb-4">Principais Marcas que Trabalhamos</p>
           <Brands />
         </div>
       </section>
@@ -54,23 +55,23 @@ export default function Home() {
           <div className="grid md:grid-cols-3 gap-8">
             <div className="p-8 rounded-2xl border border-gray-100 bg-gray-50 hover:shadow-md transition">
               <div className="bg-red-100 w-12 h-12 rounded-lg flex items-center justify-center mx-auto mb-6 text-red-600">
-                <CheckCircle size={24} />
+                <Shirt size={24} />
               </div>
-              <h3 className="text-xl font-bold mb-3">Moda Infantil</h3>
+              <h3 className=" text-gray-600 text-xl font-bold mb-3">Moda Infantil</h3>
               <p className="text-gray-600 italic">Conforto e estilo para os pequenos crescerem com alegria.</p>
             </div>
             <div className="p-8 rounded-2xl border border-gray-100 bg-gray-50 hover:shadow-md transition">
               <div className="bg-red-100 w-12 h-12 rounded-lg flex items-center justify-center mx-auto mb-6 text-red-600">
-                <CheckCircle size={24} />
+                <Sparkles size={24} />
               </div>
-              <h3 className="text-xl font-bold mb-3">Moda Juvenil</h3>
+              <h3 className="text-gray-600 text-xl font-bold mb-3">Moda Juvenil</h3>
               <p className="text-gray-600 italic">As tendências que a galera jovem adora.</p>
             </div>
             <div className="p-8 rounded-2xl border border-gray-100 bg-gray-50 hover:shadow-md transition">
               <div className="bg-red-100 w-12 h-12 rounded-lg flex items-center justify-center mx-auto mb-6 text-red-600">
-                <CheckCircle size={24} />
+                <ShoppingBag size={24} />
               </div>
-              <h3 className="text-xl font-bold mb-3">Moda Adulto</h3>
+              <h3 className="text-gray-600 text-xl font-bold mb-3">Moda Adulto</h3>
               <p className="text-gray-600 italic">Masculino e Feminino com o melhor custo-benefício.</p>
             </div>
           </div>
@@ -85,9 +86,14 @@ export default function Home() {
               <div className="relative">
                 <div className="absolute -top-4 -left-4 w-24 h-24 bg-red-600 rounded-lg -z-10"></div>
                 <div className="bg-white p-2 shadow-xl rounded-lg">
-                  {/* Espaço para uma imagem real da reinauguração */}
-                  <div className="aspect-video bg-gray-200 rounded flex items-center justify-center text-gray-400 italic">
-                    <ShoppingBag size={48} />
+                  <div className="relative aspect-video overflow-hidden rounded">
+                    <Image
+                      src="/images/lojaFachada.jpg"
+                      alt="Fachada da loja SOROUPAS Magazine"
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 768px) 100vw, 50vw"
+                    />
                   </div>
                 </div>
               </div>

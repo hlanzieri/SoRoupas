@@ -1,25 +1,38 @@
+import Image from 'next/image';
 import Link from 'next/link';
-import { Shirt } from 'lucide-react';
 
 export default function Header() {
   return (
-    <header className="sticky top-0 z-50 bg-white border-b border-gray-100 shadow-sm">
-      <div className="container mx-auto px-4 h-20 flex items-center justify-between">
-        <Link href="/" className="flex items-center gap-2">
-          <div className="bg-red-600 p-2 rounded-lg">
-            <Shirt className="text-white" size={24} />
-          </div>
-          <span className="text-2xl font-bold text-red-600 tracking-tight">SOROUPAS</span>
+    <header className="sticky top-0 z-50 border-b border-white/10 bg-red-600 shadow-lg shadow-black/10">
+      <div className="container mx-auto flex h-20 items-center justify-between px-4">
+        <Link href="/" className="flex items-center gap-3 text-white transition-opacity hover:opacity-90">
+          <Image
+            src="/images/logoBranca.png"
+            alt="SÓROUPAS Magazine"
+            width={44}
+            height={44}
+            priority
+            className="h-11 w-11 shrink-0 object-contain"
+          />
+          <span className="flex flex-col leading-none">
+            <span className="text-[1.15rem] uppercase tracking-[0.24em] sm:text-[1.45rem]">
+              <span className="font-semibold">SÓ</span>
+              <span className="font-black">ROUPAS</span>
+            </span>
+            <span className="mt-1 pl-[0.12em] text-[0.65rem] font-light uppercase tracking-[0.65em] text-white/85 sm:text-[0.72rem]">
+              MAGAZINE
+            </span>
+          </span>
         </Link>
         
-        <nav className="hidden md:flex gap-8 font-medium text-gray-600">
-          <Link href="#inicio" className="hover:text-red-600 transition">Início</Link>
-          <Link href="#marcas" className="hover:text-red-600 transition">Marcas</Link>
-          <Link href="#sobre" className="hover:text-red-600 transition">Sobre</Link>
-          <Link href="#contato" className="hover:text-red-600 transition">Lojas</Link>
+        <nav className="hidden gap-8 font-medium text-white/80 md:flex">
+          <Link href="#inicio" className="transition hover:text-white">Início</Link>
+          <Link href="#marcas" className="transition hover:text-white">Marcas</Link>
+          <Link href="#sobre" className="transition hover:text-white">Sobre</Link>
+          <Link href="#contato" className="transition hover:text-white">Lojas</Link>
         </nav>
 
-        <button className="bg-red-600 text-white px-5 py-2 rounded-full font-semibold hover:bg-red-700 transition">
+        <button className="rounded-full bg-white px-5 py-2 font-semibold text-red-700 transition hover:bg-red-50">
           Ver Ofertas
         </button>
       </div>
