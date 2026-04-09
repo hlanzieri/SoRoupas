@@ -1,11 +1,16 @@
-const brands = ["Trifil", "Malwe", "UniJeans", "Hrradinhos", "Trifil", "Malwee", "UniJeans", "Hrradinhos"];
+const brands = ["Trifil", "Malwe", "UniJeans", "Hrradinhos"];
 
 export default function Brands() {
+  const brandsList = [...brands, ...brands];
+
   return (
-    <div className="bg-gray-50 py-10 overflow-hidden border-y border-gray-100">
-      <div className="flex animate-marquee whitespace-nowrap">
-        {brands.map((brand, i) => (
-          <span key={i} className="text-3xl md:text-5xl font-black text-red-700 mx-12 uppercase tracking-widest">
+    <div className="overflow-hidden border-y border-gray-100 bg-gray-50 py-10">
+      <div className="flex w-max min-w-max animate-marquee whitespace-nowrap">
+        {brandsList.map((brand, i) => (
+          <span
+            key={i}
+            className="mx-12 flex-none text-3xl font-black uppercase tracking-widest text-red-700 md:text-5xl"
+          >
             {brand}
           </span>
         ))}

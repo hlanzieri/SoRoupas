@@ -101,11 +101,11 @@ export default function Home() {
             <div className="md:w-1/2">
               <h2 className="text-3xl font-black text-gray-800 mb-6 italic">TRADIÇÃO E REINVENÇÃO</h2>
               <p className="text-gray-600 text-lg leading-relaxed mb-6">
-                A <strong>Soroupas Magazine</strong> é uma referência no varejo regional. Em 2020, nossa loja em Cataguases foi 
+                A <strong>Soroupas Magazine</strong> é uma referência no varejo regional desde 1996, oferecendo produtos de qualidade e preços competitivos. Em 2020, nossa loja em Cataguases foi 
                 totalmente remodelada para oferecer um ambiente moderno e climatizado para nossos clientes.
               </p>
               <p className="text-gray-600 text-lg leading-relaxed mb-8">
-                Nosso foco é oferecer marcas consagradas como Trifil e Malwee, garantindo que você encontre 
+                Nosso foco é oferecer marcas consagradas e modas do momento, garantindo que você encontre 
                 qualidade superior com preços que cabem no seu bolso.
               </p>
               <a 

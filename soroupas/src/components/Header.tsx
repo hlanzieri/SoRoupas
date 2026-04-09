@@ -4,7 +4,7 @@ import Link from 'next/link';
 export default function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-white/10 bg-red-600 shadow-lg shadow-black/10">
-      <div className="container mx-auto flex h-20 items-center justify-between px-4">
+      <div className="container mx-auto relative flex h-20 items-center justify-between px-4">
         <Link href="/" className="flex items-center gap-3 text-white transition-opacity hover:opacity-90">
           <Image
             src="/images/logoBranca.png"
@@ -25,16 +25,12 @@ export default function Header() {
           </span>
         </Link>
         
-        <nav className="hidden gap-8 font-medium text-white/80 md:flex">
+          <nav className="absolute left-1/2 hidden -translate-x-1/2 gap-8 font-medium text-white/80 md:flex">
           <Link href="#inicio" className="transition hover:text-white">Início</Link>
           <Link href="#marcas" className="transition hover:text-white">Marcas</Link>
           <Link href="#sobre" className="transition hover:text-white">Sobre</Link>
           <Link href="#contato" className="transition hover:text-white">Lojas</Link>
         </nav>
-
-        <button className="rounded-full bg-white px-5 py-2 font-semibold text-red-700 transition hover:bg-red-50">
-          Ver Ofertas
-        </button>
       </div>
     </header>
   );

@@ -2,13 +2,12 @@ import type { Config } from "tailwindcss";
 
 const config: Config = {
   content: [
+    "./src/**/*.{js,ts,jsx,tsx,mdx}",
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
-      // --- ADICIONE AQUI ---
       keyframes: {
         marquee: {
           '0%': { transform: 'translateX(0%)' },
@@ -18,7 +17,6 @@ const config: Config = {
       animation: {
         marquee: 'marquee 20s linear infinite',
       },
-      // ---------------------
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
