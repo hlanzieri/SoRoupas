@@ -1,4 +1,4 @@
-const brands = ["Trifil", "Malwe", "UniJeans", "Hrradinhos"];
+const brands = ["UniGirl", "Young Style", "UniJeans", "Hrradinhos"];
 
 export default function Brands() {
   const brandsList = [...brands, ...brands];

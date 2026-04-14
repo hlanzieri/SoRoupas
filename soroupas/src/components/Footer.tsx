@@ -84,7 +84,7 @@ export default function Footer() {
         {/* Rodapé Inferior */}
         <div className="border-t border-red-500 pt-8 text-center text-red-100 text-sm">
           <p>© {new Date().getFullYear()} Soroupas Magazine. Todos os direitos reservados.</p>
-          <p className="mt-2">Desenvolvido com foco em qualidade e preço acessível.</p>
+          <p className="mt-2">Desenvolvido por <a href="https://www.github.com/hlanzieri" target="_blank" rel="noopener noreferrer" className="text-white hover:underline">HLF</a></p>
         </div>
       </div>
     </footer>
