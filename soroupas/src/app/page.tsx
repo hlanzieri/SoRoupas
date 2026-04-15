@@ -27,7 +27,7 @@ export default function Home() {
               <span className="text-red-200">VESTE SUA FAMÍLIA.</span>
             </h1>
             <p className="text-xl md:text-2xl mb-10 opacity-90 max-w-xl leading-relaxed">
-              Moda infantil, juvenil e adulto com roupas que encantam. Visite nossas lojas em Cataguases e Leopoldina!
+              Moda infantil, juvenil e adulto com roupas que encantam! Visite nossas lojas em Cataguases e Leopoldina!
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link 

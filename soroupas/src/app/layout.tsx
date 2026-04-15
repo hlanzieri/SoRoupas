@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/next";
 import { Josefin_Sans } from "next/font/google";
 import "../styles/globals.css";
 
@@ -27,7 +28,10 @@ export default function RootLayout({
       lang="pt-BR"
       className={`${josefinSans.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col font-sans">{children}</body>
+      <body className="min-h-full flex flex-col font-sans">
+        {children}
+        <Analytics />
+      </body>
     </html>
   );
 }
