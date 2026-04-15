@@ -27,7 +27,7 @@ export default function Home() {
               <span className="text-red-200">VESTE SUA FAMÍLIA.</span>
             </h1>
             <p className="text-xl md:text-2xl mb-10 opacity-90 max-w-xl leading-relaxed">
-              Moda infantil, juvenil e adulto com roupas que encantam. Visite nossas lojas em Cataguases e Leopoldina.
+              Moda infantil, juvenil e adulto com roupas que encantam. Visite nossas lojas em Cataguases e Leopoldina!
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link 
@@ -105,7 +105,7 @@ export default function Home() {
                 totalmente remodelada para oferecer um ambiente moderno e climatizado para nossos clientes.
               </p>
               <p className="text-gray-600 text-lg leading-relaxed mb-8">
-                Nosso foco é oferecer roupas da moda do momento e os básicos de sempre atualizados, garantindo que você encontre 
+                Nosso foco é oferecer roupas da moda, os básicos sempre atualizados e garantir que você encontre 
                 qualidade com preços que cabem no seu bolso.
               </p>
               <a 
